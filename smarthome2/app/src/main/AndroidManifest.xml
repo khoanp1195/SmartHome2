@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.firebasetest">
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_MULTICAST_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/backgroun_home"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/backgroun_home"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Neumorph.NoActionBar"
+        tools:ignore="AllowBackup,GoogleAppIndexingWarning">
+
+        <activity android:name=".WifiActivity" />
+
+        <activity android:name=".RegisterActivity" />
+        <activity android:name=".LanguageActivity" />
+        <activity android:name=".DashboardActivity"/>
+        <activity android:name=".admin"/>
+        <activity android:name=".hienthi3"/>
+
+        <activity android:name=".Login1.Register"/>
+        <activity android:name=".Login1.ProfileInfo"/>
+        <activity android:name=".Login1.Profile"/>
+        <activity android:name=".Login1.EditProfile"/>
+        <activity android:name=".Login1.Mainactivity"/>
+        <activity android:name=".fragment.DisplayFragment" />
+        <receiver android:name=".fragment.ControlFragment" />
+
+        <activity
+            android:name=".Login1.Login"
+            android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

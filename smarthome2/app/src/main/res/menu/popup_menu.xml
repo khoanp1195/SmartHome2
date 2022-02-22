@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+<group android:checkableBehavior="single">
+    <item
+        android:id = "@+id/nav_home"
+        android:title="Home"
+        android:icon="@drawable/home">
+
+    </item>
+</group>
+
+    <item android:title="Communicate">
+        <menu>
+            <item
+                android:id="@+id/nav_video"
+                android:title="Display"
+                android:icon="@drawable/display"/>
+
+            <item
+                android:id="@+id/nav_direct"
+                android:title="Display 2"
+                android:icon="@drawable/display"/>
+            <item
+                android:id="@+id/nav_control"
+                android:title="Control Display"
+                android:icon="@drawable/display"/>
+
+        </menu>
+    </item>
+    <group android:checkableBehavior="single">
+        <item android:title="Different">
+            <menu>
+
+                <item
+                    android:id="@+id/nav_logout"
+                    android:icon="@drawable/logout"
+                    android:title="Logout"/>
+            </menu>
+        </item>
+    </group>
+
+</menu>
